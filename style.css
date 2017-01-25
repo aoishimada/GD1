@@ -40,55 +40,40 @@ body{
 
 
 /*小さい四角のほう*/
-.news	{padding: 20px;
-	border: solid 5px #dddddd
+.news{
+	width:20%;
+	margin-left:5px;
+	border:solid 6px #eee;
+	box-sizing:border-box;
+	position:absolute;
+	top:60px;
 }
-
-.news h1	{margin-top: 0;
-	margin-bottom: 5px;
-	font-size: 18px;
-	color: #666666
-}
-
-.news ul	{margin: 0;
+.news ul{
+	margin: 0;
 	padding: 0;
 	list-style: none
 }
-
+.news li{
+	border-bottom: solid 1px #eee;
+}
 .news li a	{
 	display: block;
-	padding: 5px;
-	border-bottom: dotted 2px #dddddd;
-	color: #000000;
+	padding: 8px 15px;
+	color: #000;
 	font-size: 14px;
 	text-decoration: none
-
 }
-
 .news li a:hover	{
-	background-color: #eeeeee
+	background-color: #eee;
 }
-
-.news time	{
-	color: #888888;
-	font-weight: bold
-}
-
-.news a:after	{
-	content: "";
+.news ul:after{
+	content:"";
 	display: block;
-	clear: both
+	clear:both;
 }
-
-.news time	{
-	float: left;
-	width: 60px
-}
-
-.news .text	{
-	float: none;
-	width: auto;
-	margin-left: 60px
+.news i{
+	color: #64d671;
+	padding-right: 2px;
 }
 
 
@@ -101,10 +86,11 @@ body{
 	font-size: 22px;
 	color: #ddd;
 }
-.box3 h1
+
 .box3 h2{
 	font-size: 24px;
 	border-bottom:solid 1px #ddd;
+	font-weight: normal;
 }
 .topimg {
 	max-width: 100%;
@@ -117,6 +103,7 @@ body{
 
 
 }
+
 /* ########### 767px以下 ########### */
 @media (max-width: 767px) {
 
